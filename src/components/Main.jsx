@@ -2,14 +2,19 @@ import React from 'react'
 
 const Main = () => {
     const name = "Theo"
+    const loading = true
+
     return (
         <main>
-            <h1>Hello World! My name is {name} Harris</h1>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga incidunt at blanditiis debitis excepturi suscipit nobis quisquam nostrum quaerat dolorum!
-            </p>
+            {loading ? (
+                <h1>Loading...</h1>
+            ) : (
+                <h1>Hello World! My name is {name}</h1>
+            )}
         </main>
     )
+    
+    
 }
 
 export default Main;
